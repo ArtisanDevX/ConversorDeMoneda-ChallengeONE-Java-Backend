@@ -22,9 +22,9 @@ public class Main {
             Gson gson = new Gson();
             CurrencyRequestResponse currencyData = gson.fromJson(responseBody, CurrencyRequestResponse.class);
 
-            displayMenu();
 
             while (true) {
+                displayMenu();
                 int option = getUserOption();
 
                 switch (option) {
